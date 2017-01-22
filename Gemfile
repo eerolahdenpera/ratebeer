@@ -8,7 +8,11 @@ gem 'rails', '4.1.8'
 #gem 'sqlite3'
 
 group :development, :test do
+  gem "better_errors"
   gem 'sqlite3'
+  gem 'pry-rails'  # lisää siis tämä rivi!
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
 end
 
 group :production do
