@@ -1,14 +1,11 @@
 class Beer < ActiveRecord::Base
-	belongs_to :brewery
-	has_many :ratings
+	include RatingAverage
 
-	def average_rating
-		arr = []
-		ratings.each do |rating|
-			arr.push(rating.score)
-		end
-		average = sprintf "%.2f", arr.inject(0.0) { |sum, el| sum + el } / arr.size
-		"#{average}"
+	belongs_to :brewery
+	has_many :ratings, dependent: :destroy
+
+	def to_s
+		"#{name} #{brewery.name}"
 	end
 
 end
