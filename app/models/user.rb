@@ -9,9 +9,14 @@ class User < ActiveRecord::Base
   has_many :beers, through: :ratings
 
   validates :username, uniqueness: true,
-                        length: {minimum: 3, maximum: 30 }
+                        length: { minimum: 3, maximum: 30 }
+  validates :password, length: { minimum: 4 },
+            format: {with: /\d/, message: "must contain atleast one digit."},
+            :on => :create
 
-  validates :beer_clubs, uniqueness: true
+  def has_uppercase
+    password_digest.upcase?
+  end
 
 end
 

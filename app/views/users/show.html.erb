@@ -21,16 +21,16 @@
     <% end %>
   </p>
 
-<tbody>
+<ul>
   <% @user.ratings.each do |rating| %>
-  <tr>
-    <td><%= rating.beer.name %></td>
-    <td><%= rating.score %></td>
-    <td><%= link_to 'delete', rating, method: :delete %></td>
-  </tr>
+      <li>
+        <%= rating %>
+        <% if @user == current_user %>
+            <%= link_to 'delete', rating, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </li>
   <% end %>
-</tbody>
-</table>
+</ul>
 
 
 
