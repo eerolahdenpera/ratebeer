@@ -23,7 +23,7 @@
     beers has not yet been rated!
   <% else %>
     Brewery has <%= pluralize(@brewery.ratings.count, 'rating') %>, average <%= @brewery.average_rating %>
-  <%end %>
+  <% end %>
 </p>
 
 
