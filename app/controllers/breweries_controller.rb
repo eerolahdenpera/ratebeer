@@ -1,6 +1,10 @@
 class BreweriesController < ApplicationController
-  before_action :set_brewery, only: [:show, :edit, :update, :destroy]
+  before_action :ensure_that_signed_in, except: [:index, :show]
   before_filter :authenticate, only: [:destroy]
+
+  def ensure_that_signed_in
+    redirect_to signin_path, notice:'you should be signed in' if current_user.nil?
+  end
 
   # GET /breweries
   # GET /breweries.json
@@ -11,6 +15,7 @@ class BreweriesController < ApplicationController
   # GET /breweries/1
   # GET /breweries/1.json
   def show
+    @breweries = Brewery.all
   end
 
   # GET /breweries/new

@@ -12,7 +12,13 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry-rails'  # lisää siis tämä rivi!
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false
+  gem 'binding_of_caller'
 end
 
 group :production do
