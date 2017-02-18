@@ -1,3 +1,5 @@
+ruby '2.1.5'
+
 source 'https://rubygems.org'
 
 
@@ -30,8 +32,6 @@ end
 group :test do
   gem 'webmock'
 end
-
-ruby '1.9.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
