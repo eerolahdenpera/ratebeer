@@ -5,14 +5,15 @@ gem 'rails', '4.1.8'
 
 ruby '2.1.5'
 
-# Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3'
   gem "better_errors"
   gem 'byebug'
   gem 'pry-rails'
   gem 'simplecov', require: false
+end
 
+group :development, :test do
+  gem 'sqlite3'
 end
 
 group :development, :test, :production do
