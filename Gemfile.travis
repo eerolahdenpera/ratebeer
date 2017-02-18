@@ -6,14 +6,13 @@ ruby '2.3.3'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec'
-  gem 'simplecov', require: false
   gem 'factory_girl_rails'
 end
 
 group :test do
-  gem 'simplecov', platform: :ruby
   gem 'codeclimate-test-reporter'
   gem 'webmock'
+  gem 'simplecov'
 end
 
 # Use ActiveModel has_secure_password
