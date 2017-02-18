@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+gemspec
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec'
+  gem 'simplecov', require: false
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'simplecov', platform: :ruby
+  gem 'codeclimate-test-reporter'
+end
