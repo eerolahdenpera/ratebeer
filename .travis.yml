@@ -8,4 +8,6 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rspec -fd spec/
 
+env:
+  - APIKEY=e6b4d14d58acccd3397568e8d2605e98
 
