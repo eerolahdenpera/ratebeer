@@ -6,14 +6,15 @@ gem 'rails', '4.1.8'
 
 ruby '2.1.5'
 
-gem 'sqlite3'
+
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
   gem "better_errors"
   gem 'byebug'
   gem 'pry-rails'
   gem 'simplecov', require: false
+
 end
 
 group :development, :test, :production do
