@@ -132,7 +132,6 @@
     <findStrings>
       <find>redirect</find>
       <find>Create</find>
-      <find>bcrypt</find>
       <find>Has made</find>
       <find>json</find>
       <find>spring</find>
@@ -142,6 +141,7 @@
       <find>noko</find>
       <find>bcr</find>
       <find>bcry</find>
+      <find>bcrypt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -657,12 +657,12 @@
       <workItem from="1486932094251" duration="3155000" />
       <workItem from="1487415808533" duration="14997000" />
       <workItem from="1487432560191" duration="7196000" />
-      <workItem from="1487446157065" duration="923000" />
+      <workItem from="1487446157065" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114851000" />
+    <option name="totallyTimeSpent" value="114902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="423" y="121" width="1400" height="985" extended-state="0" />
