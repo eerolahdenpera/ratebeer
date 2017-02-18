@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rails', '4.2.7'
+ruby '2.3.3'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec'
@@ -10,4 +13,10 @@ end
 group :test do
   gem 'simplecov', platform: :ruby
   gem 'codeclimate-test-reporter'
+  gem 'webmock'
 end
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'httparty'
