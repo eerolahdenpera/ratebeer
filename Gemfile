@@ -14,6 +14,10 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-rails'
   gem 'simplecov', require: false
+end
+
+
+group :development, :test do
   gem 'sqlite3'
 end
 
