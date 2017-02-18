@@ -19,11 +19,16 @@ group :development, :test do
   gem 'launchy'
   gem 'simplecov', require: false
   gem 'binding_of_caller'
+  gem 'spring'
 end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 ruby '2.1.5'
@@ -61,3 +66,4 @@ gem 'bcrypt', '~> 3.1.7'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'coffee-script-source', '1.8.0'
+gem 'httparty'

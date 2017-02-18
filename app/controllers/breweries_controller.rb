@@ -1,10 +1,6 @@
 class BreweriesController < ApplicationController
+  before_action :set_brewery, only: [:show, :edit, :update, :destroy]
   before_action :ensure_that_signed_in, except: [:index, :show]
-  before_filter :authenticate, only: [:destroy]
-
-  def ensure_that_signed_in
-    redirect_to signin_path, notice:'you should be signed in' if current_user.nil?
-  end
 
   # GET /breweries
   # GET /breweries.json
@@ -15,7 +11,6 @@ class BreweriesController < ApplicationController
   # GET /breweries/1
   # GET /breweries/1.json
   def show
-    @breweries = Brewery.all
   end
 
   # GET /breweries/new
@@ -68,26 +63,14 @@ class BreweriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_brewery
-      @brewery = Brewery.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def brewery_params
-      params.require(:brewery).permit(:name, :year)
-    end
-
-  private
-
-  def authenticate
-    admin_accounts = { "admin" => "secret", "pekka" => "beer", "arto" => "foobar", "matti" => "ittam"}
-
-    authenticate_or_request_with_http_basic do |username, password|
-      # do something here
-      admin_accounts[username] == password
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_brewery
+    @brewery = Brewery.find(params[:id])
   end
 
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def brewery_params
+    params.require(:brewery).permit(:name, :year)
+  end
 
 end

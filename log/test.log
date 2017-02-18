@@ -17514,3 +17514,1936 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[36mRating Load (0.0ms)[0m  [1mSELECT  "ratings".* FROM "ratings"  WHERE "ratings"."user_id" = ?  ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 1]]
   [1m[35mBeer Load (0.0ms)[0m  SELECT  "beers".* FROM "beers"  WHERE "beers"."id" = ? LIMIT 1  [["id", 6]]
   [1m[36m (4.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Ab' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Ab' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Seppo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Seppo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.666733"], ["password_digest", "$2a$04$2Ib/tbsiMaF/gWwp5eMyBuOqAXc38z5L.T.SVif3Y1uHYjinQZNX2"], ["updated_at", "2017-02-18 11:24:48.666733"], ["username", "Pekka"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.682734"], ["password_digest", "$2a$04$lNowOf1FDSpMeSLgKaEriuEs9IecUiSJXuw2VdvfJlyDMWLSGPrva"], ["updated_at", "2017-02-18 11:24:48.682734"], ["username", "Pekka"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."username" = 'Pekka' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (4.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.691735"], ["password_digest", "$2a$04$4xFI.CHqcP7MfNRSV1Tk7O9GmI6zHgfT353TexEJIkqzlK/3i69mC"], ["updated_at", "2017-02-18 11:24:48.691735"], ["username", "Pekka"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.715736"], ["score", 10], ["updated_at", "2017-02-18 11:24:48.715736"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "ratings" SET "updated_at" = ?, "user_id" = ? WHERE "ratings"."id" = 1  [["updated_at", "2017-02-18 11:24:48.721736"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("created_at", "score", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.723736"], ["score", 20], ["updated_at", "2017-02-18 11:24:48.723736"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "ratings" SET "updated_at" = ?, "user_id" = ? WHERE "ratings"."id" = 2  [["updated_at", "2017-02-18 11:24:48.724736"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "ratings"  WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36mRating Load (0.0ms)[0m  [1mSELECT "ratings".* FROM "ratings"  WHERE "ratings"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "ratings"  WHERE "ratings"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (6.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.737737"], ["password_digest", "$2a$04$a215nC/nD0wrwD9YtqSarO9LZxwzRoUFhb.T2CIllsxNhm67EiAhO"], ["updated_at", "2017-02-18 11:24:48.737737"], ["username", "Pekka"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.745738"], ["password_digest", "$2a$04$uitWjdYX7IJuxv/YYdl5m.pZTE3YUa1pzzqwzQUSVlWs5Z2jvFUdK"], ["updated_at", "2017-02-18 11:24:48.745738"], ["username", "Pekka"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRating Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "ratings"  WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (4.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.756738"], ["password_digest", "$2a$04$At61kq9IcMb.dvHjmDxBe.m9L0IFeG1194mCtONtCs/m5tl0Qgr6y"], ["updated_at", "2017-02-18 11:24:48.756738"], ["username", "Pekka"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.768739"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.768739"], ["year", 1900]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 1], ["created_at", "2017-02-18 11:24:48.771739"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.771739"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["created_at", "2017-02-18 11:24:48.774739"], ["score", 10], ["updated_at", "2017-02-18 11:24:48.774739"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRating Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "ratings"  WHERE "ratings"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mRating Load (0.0ms)[0m  SELECT  "ratings".* FROM "ratings"  WHERE "ratings"."user_id" = ?  ORDER BY "ratings"."score" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT  "beers".* FROM "beers"  WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'Pekka' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.783740"], ["password_digest", "$2a$04$AwFgV2uJt76aHU28peOZeOoAiE.mwwWnQ4/y7jinadkaohQybPWYW"], ["updated_at", "2017-02-18 11:24:48.783740"], ["username", "Pekka"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.785740"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.785740"], ["year", 1900]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 1], ["created_at", "2017-02-18 11:24:48.787740"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.787740"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["created_at", "2017-02-18 11:24:48.788740"], ["score", 10], ["updated_at", "2017-02-18 11:24:48.788740"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.790740"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.790740"], ["year", 1900]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 2], ["created_at", "2017-02-18 11:24:48.791740"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.791740"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 2], ["created_at", "2017-02-18 11:24:48.792740"], ["score", 20], ["updated_at", "2017-02-18 11:24:48.792740"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.793740"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.793740"], ["year", 1900]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 3], ["created_at", "2017-02-18 11:24:48.794740"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.794740"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 3], ["created_at", "2017-02-18 11:24:48.796741"], ["score", 15], ["updated_at", "2017-02-18 11:24:48.796741"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.797741"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.797741"], ["year", 1900]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 4], ["created_at", "2017-02-18 11:24:48.798741"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.798741"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 4], ["created_at", "2017-02-18 11:24:48.800741"], ["score", 7], ["updated_at", "2017-02-18 11:24:48.800741"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:24:48.801741"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.801741"], ["year", 1900]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 5], ["created_at", "2017-02-18 11:24:48.802741"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.802741"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 5], ["created_at", "2017-02-18 11:24:48.803741"], ["score", 9], ["updated_at", "2017-02-18 11:24:48.803741"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:24:48.805741"], ["name", "anonymous"], ["updated_at", "2017-02-18 11:24:48.805741"], ["year", 1900]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 6], ["created_at", "2017-02-18 11:24:48.806741"], ["name", "anonymous"], ["style", "Lager"], ["updated_at", "2017-02-18 11:24:48.806741"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "ratings" ("beer_id", "created_at", "score", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 6], ["created_at", "2017-02-18 11:24:48.807741"], ["score", 25], ["updated_at", "2017-02-18 11:24:48.807741"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRating Exists (0.0ms)[0m  SELECT  1 AS one FROM "ratings"  WHERE "ratings"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mRating Load (0.0ms)[0m  [1mSELECT  "ratings".* FROM "ratings"  WHERE "ratings"."user_id" = ?  ORDER BY "ratings"."score" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mBeer Load (0.0ms)[0m  SELECT  "beers".* FROM "beers"  WHERE "beers"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:27:12 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 136ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:27:12.930985"], ["name", "Koff"], ["updated_at", "2017-02-18 11:27:12.930985"], ["year", 1897]]
+  [1m[36m (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:27:12.935985"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:27:12.935985"], ["year", 1898]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:27:12.937985"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:27:12.937985"], ["year", 1899]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:27:12 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:27:12.954986"], ["name", "Koff"], ["updated_at", "2017-02-18 11:27:12.954986"], ["year", 1897]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:27:12.956986"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:27:12.956986"], ["year", 1898]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:27:12.958986"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:27:12.958986"], ["year", 1899]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:27:12 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started GET "/breweries/1" for 127.0.0.1 at 2017-02-18 13:27:12 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered breweries/show.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/views/breweries/show.html.erb:4:in `_app_views_breweries_show_html_erb___939266694_38840712'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `get'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:32:in `follow'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:58:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:43:in `click_link'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/breweries_page_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:31:36 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:31:36.898083"], ["name", "Koff"], ["updated_at", "2017-02-18 11:31:36.898083"], ["year", 1897]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:31:36.902083"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:31:36.902083"], ["year", 1898]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:31:36.904083"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:31:36.904083"], ["year", 1899]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:31:36 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:31:36.921084"], ["name", "Koff"], ["updated_at", "2017-02-18 11:31:36.921084"], ["year", 1897]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:31:36.923084"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:31:36.923084"], ["year", 1898]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:31:36.925084"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:31:36.925084"], ["year", 1899]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:31:36 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+Started GET "/breweries/1" for 127.0.0.1 at 2017-02-18 13:31:36 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered breweries/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/views/breweries/show.html.erb:4:in `_app_views_breweries_show_html_erb___379088971_38873496'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `get'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:32:in `follow'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:58:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:43:in `click_link'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/breweries_page_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (4.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:32:29 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (1.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:32:29.429087"], ["name", "Koff"], ["updated_at", "2017-02-18 11:32:29.429087"], ["year", 1897]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:32:29.433087"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:32:29.433087"], ["year", 1898]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:32:29.435088"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:32:29.435088"], ["year", 1899]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:32:29 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:32:29.452089"], ["name", "Koff"], ["updated_at", "2017-02-18 11:32:29.452089"], ["year", 1897]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:32:29.454089"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:32:29.454089"], ["year", 1898]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:32:29.456089"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:32:29.456089"], ["year", 1899]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:32:29 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started GET "/breweries/1" for 127.0.0.1 at 2017-02-18 13:32:29 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered breweries/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/views/breweries/show.html.erb:4:in `_app_views_breweries_show_html_erb__1017486870_39612744'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `get'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:32:in `follow'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:58:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:43:in `click_link'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/breweries_page_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:590:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (4.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:34:18 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:34:18.785342"], ["name", "Koff"], ["updated_at", "2017-02-18 11:34:18.785342"], ["year", 1897]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:34:18.791342"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:34:18.791342"], ["year", 1898]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:34:18.793342"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:34:18.793342"], ["year", 1899]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:34:18 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:34:18.810343"], ["name", "Koff"], ["updated_at", "2017-02-18 11:34:18.810343"], ["year", 1897]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:34:18.812344"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:34:18.812344"], ["year", 1898]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:34:18.814344"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:34:18.814344"], ["year", 1899]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:34:18 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started GET "/breweries/1" for 127.0.0.1 at 2017-02-18 13:34:18 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT  "breweries".* FROM "breweries"  WHERE "breweries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "beers"  WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers"  WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35mRating Exists (0.0ms)[0m  SELECT  1 AS one FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ? LIMIT 1  [["brewery_id", 1]]
+  Rendered breweries/show.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:43:49 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:43:49.838004"], ["name", "Koff"], ["updated_at", "2017-02-18 11:43:49.838004"], ["year", 1897]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:43:49.843005"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:43:49.843005"], ["year", 1898]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:43:49.845005"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:43:49.845005"], ["year", 1899]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:43:49 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (4.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:43:49.863006"], ["name", "Koff"], ["updated_at", "2017-02-18 11:43:49.863006"], ["year", 1897]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", "2017-02-18 11:43:49.865006"], ["name", "Karjala"], ["updated_at", "2017-02-18 11:43:49.865006"], ["year", 1898]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-02-18 11:43:49.867006"], ["name", "Schlenkerla"], ["updated_at", "2017-02-18 11:43:49.867006"], ["year", 1899]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/breweries" for 127.0.0.1 at 2017-02-18 13:43:49 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.0ms)[0m  SELECT "breweries".* FROM "breweries"
+  Rendered breweries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started GET "/breweries/1" for 127.0.0.1 at 2017-02-18 13:43:49 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.0ms)[0m  [1mSELECT  "breweries".* FROM "breweries"  WHERE "breweries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "beers"  WHERE "beers"."brewery_id" = ?  [["brewery_id", 1]]
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers"  WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[35mRating Exists (0.0ms)[0m  SELECT  1 AS one FROM "ratings" INNER JOIN "beers" ON "ratings"."beer_id" = "beers"."id" WHERE "beers"."brewery_id" = ? LIMIT 1  [["brewery_id", 1]]
+  Rendered breweries/show.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (4.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:28:27 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:28:28 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:31:15 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:31:15 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:32:03 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:32:03 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:32:31 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:32:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:33:29 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:33:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:34:06 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:34:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:34:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:34:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:35:31 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:35:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:35:31 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:35:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 329ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:35:31 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kemeple", "commit"=>"Search"}
+Completed 500 Internal Server Error in 20ms
+
+RSpec::Mocks::MockExpectationError - #<BeermappingApi (class)> received :places_in with unexpected arguments
+  expected: ("kempele")
+       got: ("kemeple")
+ Please stub a default value first if message might be received with other args as well. 
+:
+  rspec-support (3.5.0) lib/rspec/support.rb:87:in `block in <module:Support>'
+  rspec-support (3.5.0) lib/rspec/support.rb:96:in `notify_failure'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:327:in `notify'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:311:in `__raise'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:63:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:206:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:191:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:326:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:77:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/verifying_proxy.rb:156:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:64:in `block (2 levels) in define_proxy_method'
+  app/controllers/places_controller.rb:9:in `search'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `post'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:27:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/form.rb:79:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:62:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:61:in `click_button'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/places_spec.rb:28:in `block (2 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 326ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:40:19 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kemeple", "commit"=>"Search"}
+Completed 500 Internal Server Error in 20ms
+
+RSpec::Mocks::MockExpectationError - #<BeermappingApi (class)> received :places_in with unexpected arguments
+  expected: ("kempele")
+       got: ("kemeple")
+ Please stub a default value first if message might be received with other args as well. 
+:
+  rspec-support (3.5.0) lib/rspec/support.rb:87:in `block in <module:Support>'
+  rspec-support (3.5.0) lib/rspec/support.rb:96:in `notify_failure'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:327:in `notify'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:311:in `__raise'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:63:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:206:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:191:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:326:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:77:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/verifying_proxy.rb:156:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:64:in `block (2 levels) in define_proxy_method'
+  app/controllers/places_controller.rb:9:in `search'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `post'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:27:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/form.rb:79:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:62:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:61:in `click_button'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/places_spec.rb:24:in `block (2 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 305ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:21 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kemeple", "commit"=>"Search"}
+Completed 500 Internal Server Error in 20ms
+
+RSpec::Mocks::MockExpectationError - #<BeermappingApi (class)> received :places_in with unexpected arguments
+  expected: ("kempele")
+       got: ("kemeple")
+ Please stub a default value first if message might be received with other args as well. 
+:
+  rspec-support (3.5.0) lib/rspec/support.rb:87:in `block in <module:Support>'
+  rspec-support (3.5.0) lib/rspec/support.rb:96:in `notify_failure'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:327:in `notify'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:311:in `__raise'
+  rspec-mocks (3.5.0) lib/rspec/mocks/error_generator.rb:63:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:206:in `raise_missing_default_stub_error'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:191:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/proxy.rb:326:in `message_received'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:77:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/verifying_proxy.rb:156:in `proxy_method_invoked'
+  rspec-mocks (3.5.0) lib/rspec/mocks/method_double.rb:64:in `block (2 levels) in define_proxy_method'
+  app/controllers/places_controller.rb:9:in `search'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `post'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:27:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/form.rb:79:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:62:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:61:in `click_button'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/places_spec.rb:25:in `block (2 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 328ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:41:55 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:42:51 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 1384ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:42:53 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 315ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:43:15 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 315ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:01 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 366ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:46:35 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:47:44 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:47:44 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:47:44 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:47:44 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:48:16 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError - undefined method `empty?' for nil:NilClass:
+  app/controllers/places_controller.rb:10:in `search'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/builder.rb:138:in `call'
+  rack (1.5.5) lib/rack/urlmap.rb:65:in `block in call'
+  rack (1.5.5) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `post'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:61:in `process'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+  capybara (2.12.1) lib/capybara/rack_test/browser.rb:27:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/form.rb:79:in `submit'
+  capybara (2.12.1) lib/capybara/rack_test/node.rb:62:in `click'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `block in click'
+  capybara (2.12.1) lib/capybara/node/base.rb:85:in `synchronize'
+  capybara (2.12.1) lib/capybara/node/element.rb:143:in `click'
+  capybara (2.12.1) lib/capybara/node/actions.rb:61:in `click_button'
+  capybara (2.12.1) lib/capybara/session.rb:780:in `block (2 levels) in <class:Session>'
+  capybara (2.12.1) lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+  spec/features/places_spec.rb:36:in `block (2 levels) in <top (required)>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:254:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `block in with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `block in run'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-rails (3.5.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:443:in `instance_exec'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:375:in `execute_with'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:338:in `call'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'
+  rspec-core (3.5.4) lib/rspec/core/hooks.rb:464:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:453:in `with_around_example_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:496:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.5.4) lib/rspec/core/example.rb:251:in `run'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:627:in `block in run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:623:in `run_examples'
+  rspec-core (3.5.4) lib/rspec/core/example_group.rb:589:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (3 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:113:in `block (2 levels) in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/configuration.rb:1835:in `with_suite_hooks'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:112:in `block in run_specs'
+  rspec-core (3.5.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:111:in `run_specs'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:87:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:71:in `run'
+  rspec-core (3.5.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.5.4) exe/rspec:4:in `<top (required)>'
+  C:/koodaus/RailsInstaller/Ruby2.1.0/bin/rspec:22:in `<main>'
+
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"mattilanpuisto", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"korpi", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2017-02-18 14:49:14 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m

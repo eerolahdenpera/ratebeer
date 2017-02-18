@@ -1,0 +1,14 @@
+language: ruby
+
+rvm:
+ - 2.1.5p273
+
+script:
+ - bundle exec rake db:migrate --trace
+ - RAILS_ENV=test bundle exec rake db:migrate --trace
+ - bundle exec rake db:test:prepare
+ - bundle exec rspec -fd spec/
+
+env:
+ - APIKEY="e6b4d14d58acccd3397568e8d2605e98"
+
