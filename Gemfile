@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
+gem 'sqlite3'
+
 ruby '2.1.5'
 
 group :development, :test do
@@ -12,9 +14,7 @@ group :development, :test do
   gem 'simplecov', require: false
 end
 
-group :development, :test do
-  gem 'sqlite3'
-end
+
 
 group :development, :test, :production do
   gem 'rspec-rails', '~> 3.5'
