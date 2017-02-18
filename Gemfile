@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 
+ruby '2.1.5'
+
 #gem 'sqlite3'
 
 group :development, :test do
@@ -64,4 +66,3 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'coffee-script-source', '1.8.0'
 gem 'httparty'
-ruby '2.1.5'
