@@ -1,15 +1,18 @@
 language: ruby
 rvm:
-  - 2.3.3
-
+- 2.3.3
 gemfile: Gemfile.travis
-
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec -fd spec/
-
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
 env:
-  - APIKEY=e6b4d14d58acccd3397568e8d2605e98
-
+- APIKEY=e6b4d14d58acccd3397568e8d2605e98
+deploy:
+  provider: heroku
+  api_key:
+    secure: uC3pEQkkUUurmmU5a7Nbu4F/jajogCO5H0ncanZ+n/kQVcStInNVt7pkfBg8pGllrETi5Ksqz2pIVWcj3SxbVzkBYrWBdXpv0qMrGURowwwvxfhgwlVNpB65xtqdC3irFwPkI6DZf1syjcujzliu8RTkrSVksoweL0o9Fl29312/Zkg76mEqCrduUcjrexvwO6W8tI/BHo5WZXr/ztEcVT+GyD8xasAUGuXToleF9aNRmkW9tL2Sq451QvwD3T2SakyALAe7Lv08+n5fhaY+9zgxWtrIEZu3rTZB4eOPi86nMLmha1q7hzVhovzsO7cAvpDqrYIXByb/XWH30m3x2Ybjfjb1Yi4U6Fg+DFmh5+jGGPaqK/h8gLpBQ/Jp9cAk//r4rsa2JczzGyikWmutlFTpN8bB6X3OesE3OKO7SGqPSHOMXFb6kH63ITewjf0jXlrH3dNrVSZtU4v+Q7utnvzrYj97k+Pw28RPRl1yhzUazwyjHVqnAz0o2JS4HIQiCijGDxtsS/7MNLqN7sri2W6BiG9TqvX/mzMtPavT7ZJHlc9pWC033Z1tf9BYVAStwnfyUi8uF+hWvVF0vsycpkA1pFgnl573tG8aZfZ9JF7azNWovyrwgYuY1NCt3DxQZKNvsVCrZKqWF5XvJXYQDi3hjJ6SkTmbQX3gEn2BKNA=
+  app: shielded-thicket-98220
+  on:
+    repo: lahdeero/ratebeer
