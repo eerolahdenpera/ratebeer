@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.7'
 
-ruby '2.1.5'
+ruby '2.3.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -12,6 +12,8 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-rails'
   gem 'simplecov', require: false
+  gem 'factory_girl_rails'
+  gem 'capybara'
 end
 
 
@@ -64,3 +66,4 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'coffee-script-source', '1.8.0'
 gem 'httparty'
+gem 'nokogiri', '1.7.0.1'
