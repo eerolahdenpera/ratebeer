@@ -36,8 +36,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="372">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -224,8 +224,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="328" />
-    <option name="y" value="22" />
+    <option name="x" value="349" />
+    <option name="y" value="80" />
     <option name="width" value="1400" />
     <option name="height" value="985" />
   </component>
@@ -669,15 +669,15 @@
       <workItem from="1486892329632" duration="16646000" />
       <workItem from="1486932094251" duration="3155000" />
       <workItem from="1487415808533" duration="14997000" />
-      <workItem from="1487432560191" duration="1488000" />
+      <workItem from="1487432560191" duration="1696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108220000" />
+    <option name="totallyTimeSpent" value="108428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="328" y="22" width="1400" height="985" extended-state="0" />
+    <frame x="349" y="80" width="1400" height="985" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29029852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1075,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="372">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>

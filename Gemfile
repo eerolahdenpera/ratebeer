@@ -13,9 +13,7 @@ group :development, :test do
   gem "better_errors"
   gem 'byebug'
   gem 'pry-rails'
-end
-
-group :development, :test do
+  gem 'simplecov', require: false
   gem 'sqlite3'
 end
 
