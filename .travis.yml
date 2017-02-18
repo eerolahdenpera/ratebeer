@@ -7,5 +7,6 @@ gemfile: Gemfile.travis
 script: bundle exec rspec
 
 env:
+  - RAILS_ENV=test
   - APIKEY=e6b4d14d58acccd3397568e8d2605e98
 
