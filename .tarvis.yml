@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.5
+  - 2.3.1
 
 script:
   - bundle exec rake db:migrate --trace
@@ -9,5 +9,5 @@ script:
   - bundle exec rspec -fd spec/
 
 env:
-  - APIKEY="e6b4d14d58acccd3397568e8d2605e98"
+  - APIKEY=e6b4d14d58acccd3397568e8d2605e98
 
