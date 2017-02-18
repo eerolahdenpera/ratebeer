@@ -7,16 +7,18 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec'
   gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-its'
 end
 
 group :test do
   gem 'codeclimate-test-reporter'
   gem 'webmock'
   gem 'simplecov'
+  gem 'test-unit'
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 gem 'httparty'
-gem 'test-unit'
