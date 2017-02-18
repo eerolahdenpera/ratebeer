@@ -21,7 +21,7 @@ group :development, :test do
   gem 'launchy'
   gem 'simplecov', require: false
   gem 'binding_of_caller'
-  gem 'spring'
+  #gem 'spring'
 end
 
 group :production do
