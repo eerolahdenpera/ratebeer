@@ -43,4 +43,5 @@ class BeermappingApi
     raise "GOOGLEAPIKEY env variable not defined" if ENV['GOOGLEAPIKEY'].nil?
     ENV['GOOGLEAPIKEY']
   end
+
 end
