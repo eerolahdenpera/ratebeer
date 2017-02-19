@@ -6,10 +6,12 @@ describe "Beers page" do
       @breweries.each do |brewery_name|
         FactoryGirl.create(:brewery, name: brewery_name, year: year += 1)
       end
-
+      FactoryGirl.create :user2
+      sign_in(username:"Seppo", password:"Foobar2")
       visit new_beer_path
     end
     it "Try to create beer without name" do
+
       fill_in('beer_name', with:'')
       click_button('Create Beer')
       expect(page).to have_content "Name can't be blank"
