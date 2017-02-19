@@ -1,5 +1,7 @@
 class BeerClubsController < ApplicationController
+  before_action :set_beer_club, only: [:show, :edit, :update, :destroy]
   before_action :ensure_that_signed_in, except: [:index, :show]
+
 
   def ensure_that_signed_in
     redirect_to signin_path, notice:'you should be signed in' if current_user.nil?
@@ -14,6 +16,14 @@ class BeerClubsController < ApplicationController
   # GET /beer_clubs/1
   # GET /beer_clubs/1.json
   def show
+    if current_user
+      @membership = Membership.where(beer_club_id: @beer_club.id, user_id: current_user.id).first
+
+      if @membership.nil?
+        @membership = Membership.new
+        @membership.beer_club = @beer_club
+      end
+    end
   end
 
   # GET /beer_clubs/new

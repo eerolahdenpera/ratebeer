@@ -5,6 +5,10 @@ gem 'rails', '4.2.7'
 
 ruby '2.3.3'
 
+group :development do
+  gem 'binding_of_caller'
+end
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
