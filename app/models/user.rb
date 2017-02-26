@@ -32,5 +32,4 @@ class User < ActiveRecord::Base
       blocked?
     end
   end
-
 end

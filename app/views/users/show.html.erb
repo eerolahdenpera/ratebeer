@@ -43,7 +43,7 @@
     <%= link_to 'destroy', @user, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger'  %>
 <% end %>
 
-<% if current_user.admin %>
+<% if current_user && current_user.admin %>
   <% if @user.blocked? %>
     <%= link_to 'reactivate account', toggle_blocked_user_path(@user.id), method: :post, class: 'btn btn-danger' %>
   <% else %>
