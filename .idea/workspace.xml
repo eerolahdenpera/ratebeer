@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="814acfed-5fda-4fa5-9afe-e266c3170c27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170226154101_add_activity_to_brewery.rb" afterPath="$PROJECT_DIR$/db/migrate/20170226154101_add_activity_to_brewery.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/brewery.rb" afterPath="$PROJECT_DIR$/app/models/brewery.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -35,16 +35,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,11 +90,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170226154101_add_activity_to_brewery.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="20170226154101_add_activity_to_brewery.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20170226154101_add_activity_to_brewery.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="brewery.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -199,7 +199,6 @@
         <option value="$PROJECT_DIR$/app/views/ratings/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/beers/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/brewery.rb" />
         <option value="$PROJECT_DIR$/app/views/breweries/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/beer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
@@ -220,6 +219,7 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170226154101_add_activity_to_brewery.rb" />
+        <option value="$PROJECT_DIR$/app/models/brewery.rb" />
       </list>
     </option>
   </component>
@@ -230,8 +230,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="107" />
+    <option name="x" value="72" />
+    <option name="y" value="140" />
     <option name="width" value="1712" />
     <option name="height" value="977" />
   </component>
@@ -699,15 +699,15 @@
       <workItem from="1487456652342" duration="456000" />
       <workItem from="1487508800923" duration="12660000" />
       <workItem from="1488118731553" duration="68000" />
-      <workItem from="1488118837118" duration="30112000" />
+      <workItem from="1488118837118" duration="30767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166405000" />
+    <option name="totallyTimeSpent" value="167060000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="107" width="1712" height="977" extended-state="0" />
+    <frame x="72" y="140" width="1712" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25605327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -920,14 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1176,6 +1168,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
