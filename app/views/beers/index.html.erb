@@ -1,6 +1,6 @@
 <h1>Listing beers</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -13,11 +13,11 @@
   <tbody>
     <% @beers.each do |beer| %>
       <tr>
-        <td><%= link_to beer.name, beer %></td>
+        <td><%= link_to beer.name, beer, class:'btn btn-link' %></td>
         <td><%= beer.style %></td>
-        <td><%= link_to beer.brewery.name, beer.brewery %></td>
-        <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
-        <td><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to beer.brewery.name, beer.brewery, class:'btn btn-link' %></td>
+        <td><%= link_to 'Edit', edit_beer_path(beer), class:'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,5 +25,5 @@
 
 <br>
 
-<%= link_to('New Beer', new_beer_path) if current_user %>
+<%= link_to('New Beer', new_beer_path, class:'btn btn-primary') if current_user %>
 

@@ -2,10 +2,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7'
+gem 'bootstrap-sass'
 
 ruby '2.3.3'
 
 group :development do
+  gem 'rails_layout'
   gem 'binding_of_caller'
 end
 

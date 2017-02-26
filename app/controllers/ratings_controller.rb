@@ -1,6 +1,11 @@
 class RatingsController < ApplicationController
   def index
     @ratings = Rating.all
+    @recent = @ratings.order('created_at DESC').limit(5)
+    @users = User.all
+    @top_raters = User.all.sort_by {|u| u.number_of_ratings}.reverse
+    @top_breweries = Brewery.top 3
+    @top_beers = Beer.top 3
   end
 
   def new

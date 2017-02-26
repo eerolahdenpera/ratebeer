@@ -68,10 +68,14 @@ class BeerClubsController < ApplicationController
   # DELETE /beer_clubs/1
   # DELETE /beer_clubs/1.json
   def destroy
-    @beer_club.destroy
-    respond_to do |format|
-      format.html { redirect_to beer_clubs_url, notice: 'Beer club was successfully destroyed.' }
-      format.json { head :no_content }
+    if current_user.admin
+      @beer_club.destroy
+      respond_to do |format|
+        format.html { redirect_to beer_clubs_url, notice: 'Beer club was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+    else
+      redirect_to :back, notice: 'Only admins can destroy clubs'
     end
   end
 
