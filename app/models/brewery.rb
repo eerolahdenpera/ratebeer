@@ -13,6 +13,7 @@ class Brewery < ActiveRecord::Base
 	def self.top(n)
 		sorted_by_rating_in_desc_order = Brewery.all.sort_by{ |b| -(b.average_rating||0) }.take(3)
 	end
+
 	def round(number)
 		number.to_f.round(2)
 	end

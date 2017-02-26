@@ -8,7 +8,7 @@
   <% @top_breweries.each do |brewery| %>
   <tr>
     <td><%= link_to brewery.name, brewery %></td>
-    <td><%= brewery.average_rating.round(2) %></td>
+    <td><%= brewery.round(brewery.average_rating) %></td>
   </tr>
       <% end %>
   </tbody>
@@ -25,7 +25,7 @@
     <% @top_beers.each do |beer| %>
         <tr>
           <td><%= link_to beer.name, beer %></td>
-          <td><%= beer.average_rating.round(2) %></td>
+          <td><%= beer.round(beer.average_rating) %></td>
         </tr>
     <% end %>
     </tbody>
