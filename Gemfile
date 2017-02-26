@@ -8,6 +8,7 @@ ruby '2.3.3'
 
 group :development do
   gem 'binding_of_caller'
+  gem 'rails_layout'
 end
 
 group :development, :test do
@@ -19,7 +20,6 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'rails_layout'
 end
 
 group :development, :test, :production do
