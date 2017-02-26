@@ -9,7 +9,6 @@ script:
 - bundle exec rspec -fd spec/
 env:
 - APIKEY=e6b4d14d58acccd3397568e8d2605e98
-- WEATHER_KEY=f09e5c5cecfb4275a01142905172602
 deploy:
   provider: heroku
   api_key:
