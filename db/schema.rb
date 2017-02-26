@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226185558) do
+ActiveRecord::Schema.define(version: 20170226205842) do
 
   create_table "beer_clubs", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20170226185558) do
     t.datetime "updated_at"
     t.string   "password_digest", limit: 255
     t.boolean  "admin"
+    t.boolean  "blocked"
   end
 
 end
