@@ -7,7 +7,6 @@ gem 'bootstrap-sass'
 ruby '2.3.3'
 
 group :development do
-  gem 'rails_layout'
   gem 'binding_of_caller'
 end
 
@@ -20,9 +19,8 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'rails_layout'
 end
-
-
 
 group :development, :test, :production do
   gem 'rspec-rails', '~> 3.5'
