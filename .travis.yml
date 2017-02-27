@@ -16,3 +16,6 @@ deploy:
   app: shielded-thicket-98220
   on:
     repo: lahdeero/ratebeer
+  run:
+    - "rake db:migrate"
+    - "rake cleanup"
