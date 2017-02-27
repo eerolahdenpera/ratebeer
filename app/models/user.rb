@@ -25,11 +25,4 @@ class User < ActiveRecord::Base
     ratings.order(score: :desc).limit(1).first.beer
   end
 
-  def blocked
-    unless blocked? nil?
-      false
-    else
-      blocked?
-    end
-  end
 end
