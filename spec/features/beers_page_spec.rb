@@ -6,6 +6,7 @@ describe "Beers" do
   before :each do
     FactoryGirl.create :user2
     FactoryGirl.create :brewery, name: "Schlenkerla"
+    FactoryGirl.create :style
     sign_in(username:"Seppo", password:"Foobar2")
     visit new_beer_path
   end

@@ -2,13 +2,13 @@ require 'rails_helper'
 
 RSpec.describe Beer, type: :model do
     it "will be fine with name and style" do
-      beer = Beer.create name:"Kalja", style: "Lager"
+      beer = FactoryGirl.create(:beer)
 
       expect(beer).to be_valid
       expect(Beer.count).to eq(1)
     end
     it "has to have name" do
-      beer = Beer.create name: "", style: "Lager"
+      beer = Beer.create name: ""
 
      expect(beer).not_to be_valid
       expect(Beer.count).to eq(0)
