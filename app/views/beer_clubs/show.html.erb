@@ -19,7 +19,7 @@
     </ul>
 <% end %>
 
-<% if current_user %>
+<% if @applicants.any? and current_user %>
     <% if @membership.user_id %>
         <p>Applicants:</p>
         <ul>

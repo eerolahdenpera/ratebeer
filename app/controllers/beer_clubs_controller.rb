@@ -17,13 +17,17 @@ class BeerClubsController < ApplicationController
   # GET /beer_clubs/1.json
   def show
     @confirmed_members = Membership.where(beer_club_id: @beer_club.id, confirmed: true)
+    @applicants = []
 
     if current_user
       @membership = Membership.where(beer_club_id: @beer_club.id, user_id: current_user.id).first
-      @applicants = Membership.where(beer_club_id: @beer_club.id, confirmed: [false, nil])
+
       if @membership.nil?
         @membership = Membership.new
         @membership.beer_club = @beer_club
+      else if @membership.confirmed?
+        @applicants = Membership.where(beer_club_id: @beer_club.id, confirmed: [false, nil])
+          end
       end
     end
   end
