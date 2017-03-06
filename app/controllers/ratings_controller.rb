@@ -1,4 +1,7 @@
 class RatingsController < ApplicationController
+
+  # GET /ratings
+  # GET /ratings.json
   def index
     @ratings = Rating.all
     @recent = @ratings.order('created_at DESC').limit(5)

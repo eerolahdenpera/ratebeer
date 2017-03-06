@@ -2,11 +2,49 @@ class BreweriesController < ApplicationController
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
   before_action :ensure_that_signed_in, except: [:index, :show]
 
+
+  def list
+
+  end
   # GET /breweries
   # GET /breweries.json
   def index
     @active_breweries = Brewery.active
     @retired_breweries = Brewery.retired
+    @breweries = Brewery.all
+
+    if params[:order] == 'name' && session[:order] == 'name'
+      order = 'name_reverse'
+    else if  params[:order] == 'name' && session[:order] == 'name_reverse'
+           order = 'name'
+    else if params[:order] == 'year' && session[:order] == 'year'
+           order = 'year_reverse'
+    else if params[:order] == 'year' && session[:order] == 'year_reverse'
+           order = 'year'
+    else
+      order = params[:order] || 'name'
+         end
+           end
+    end
+    end
+
+    #byebug
+
+    session[:order] = order
+
+
+    @active_breweries = case order
+      when 'name' then @active_breweries.sort_by{ |brewery| brewery.name }
+      when 'year' then @active_breweries.sort_by{ |brewery| brewery.year }
+      when 'name_reverse' then @active_breweries.sort_by{ |brewery| brewery.name }.reverse
+      when 'year_reverse' then @active_breweries.sort_by{ |brewery| brewery.year }.reverse
+    end
+    @retired_breweries = case order
+     when 'name' then @retired_breweries.sort_by{ |brewery| brewery.name }
+     when 'year' then @retired_breweries.sort_by{ |brewery| brewery.year }
+     when 'name_reverse' then @retired_breweries.sort_by{ |brewery| brewery.name }.reverse
+     when 'year_reverse' then @retired_breweries.sort_by{ |brewery| brewery.year }.reverse
+   end
   end
 
   # GET /breweries/1

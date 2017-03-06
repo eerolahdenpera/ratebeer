@@ -17,4 +17,8 @@ class Brewery < ActiveRecord::Base
 	def round(number)
 		number.to_f.round(2)
 	end
+
+  def number_of_beers
+		beers.count
+	end
 end

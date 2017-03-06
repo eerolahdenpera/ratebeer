@@ -3,12 +3,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7'
 gem 'bootstrap-sass'
+gem 'jquery-turbolinks'
+
 
 ruby '2.3.3'
 
 group :development do
   gem 'binding_of_caller'
   gem 'rails_layout'
+  gem 'rack-mini-profiler'
 end
 
 group :development, :test do
@@ -20,6 +23,7 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'chromedriver-helper'
 end
 
 group :development, :test, :production do
@@ -34,6 +38,8 @@ end
 
 group :test do
   gem 'webmock'
+  gem 'selenium-webdriver', '2.53.4'
+  gem 'database_cleaner'
 end
 
 # Use SCSS for stylesheets

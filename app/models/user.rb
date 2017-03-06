@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
   validates :password, format: { with: /([A-Z].*\d)|(\d.*[A-Z].*)/,
                                  message: "should contain one number and one capital letter" }
 
-
   def number_of_ratings
     ratings.count
   end

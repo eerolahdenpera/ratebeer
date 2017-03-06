@@ -4,12 +4,14 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.includes(:ratings, :beers).all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    @member_of = BeerClub.joins(:memberships).where(memberships: { user_id: @user.id, confirmed: true})
+    @applications = BeerClub.joins(:memberships).where(memberships: { user_id: @user.id, confirmed: [nil,false]})
   end
 
   # GET /users/new

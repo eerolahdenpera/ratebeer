@@ -4,6 +4,8 @@ gem 'bootstrap-sass'
 
 gem 'rails', '4.2.7'
 ruby '2.3.3'
+gem 'jquery-turbolinks'
+
 
 group :development, :test do
   gem 'sqlite3'
@@ -19,6 +21,9 @@ group :test do
   gem 'webmock'
   gem 'simplecov'
   gem 'test-unit'
+  gem 'selenium-webdriver', '2.53.4'
+  gem "chromedriver-helper"
+  gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password

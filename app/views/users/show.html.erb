@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h2> <%= @user.username %>
   <% if @user.blocked? %>
       <span class="label label-info">frozen</span>
@@ -8,13 +6,26 @@
 
 <p>Has made <%= pluralize(@user.ratings.count, "rating") %></p>
 
-<% if @user.beer_clubs.any? %>
+<% if @user.memberships.any? %>
+    <h2>Beer clubs</h2>
 
-    <p>member of
-      <% @user.beer_clubs.each do |club| %>
-          <%= link_to club.name, club%>
+    <% if @member_of.any? %>
+      <strong>member of </strong>
+      <ul>
+        <% @member_of.each do |confirmed_membership| %>
+            <li> <%= confirmed_membership.name %> </li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <% if @applications.any? %>
+    <strong>applied membership of</strong>
+    <ul>
+      <% @applications.each do |application| %>
+          <li> <%= application.name %> </li>
       <% end %>
-    </p>
+    </ul>
+    <% end %>
 <% else %>
     <p>no beerclub memberships</p>
 <% end %>
